@@ -1,76 +1,159 @@
-# 🌤 London Weather Temperature Prediction
+# 🌦 London Weather Temperature Prediction
 
-A complete end-to-end Machine Learning project that predicts the **daily mean temperature** of London based on historical meteorological parameters:
+A complete Machine Learning and Data Analytics project that predicts the mean temperature in London using historical weather data.
 
-- Cloud Cover (oktas)
-- Sunshine (hours)
-- Global Radiation (W/m²)
-- Max / Min Temperature (°C)
-- Precipitation (mm)
-- Pressure (Pa)
-- Snow Depth (cm)
-- Exact Date (Year, Month, Day)
+This project combines:
 
-The project combines:
-
-✅ Advanced Data Cleaning & Imputation  
-✅ Feature Engineering (Temporal Extraction)  
-✅ Machine Learning Regression Models  
-✅ Evaluation Metrics Optimization  
-✅ Flask Web Application (with Glassmorphism UI)  
-✅ Dynamic Data Visualization (Chart.js)  
+* Machine Learning
+* MLflow experiment tracking
+* Flask web development
+* Interactive UI design
+* Power BI dashboard analytics
 
 ---
 
-# 🚀 Technologies Used
+## 🚀 Project Overview
 
-## Python & Machine Learning
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Joblib (Model Serialization)
-- Regression Algorithms (Linear Regression, Random Forest, Gradient Boosting, XGBoost)
+The objective of this project is to build a regression model capable of predicting London's daily mean temperature based on meteorological features such as:
 
-## Frontend & Visualization
-- HTML5 / CSS3 (Custom Glassmorphism Design)
-- Bootstrap 5 (Responsive Layout)
-- Font Awesome 6 (Modern UI Icons)
-- Chart.js (Dynamic Frontend Line Charts)
+* Cloud cover
+* Sunshine duration
+* Global radiation
+* Maximum and minimum temperature
+* Precipitation
+* Pressure
+* Snow depth
 
-## Web Application Backend
-- Flask
-- Jinja2 Templates
+The application includes a modern Flask web interface where users can enter weather information and receive real-time temperature predictions powered by Machine Learning.
 
 ---
 
-# 📊 Project Features
+## 🧠 Machine Learning Features
 
-## Machine Learning & Backend
-- **Data Preprocessing:** Handling of missing weather values using robust imputation techniques.
-- **Feature Engineering:** Extracted temporal features (Year, Month, Day) to capture seasonal weather cycles.
-- **Model Training & Selection:** Compared multiple regression models using R² Score, MAE, and RMSE to track down the most reliable predictor.
-- **Persistence:** Efficient model serialization using Joblib for real-time inference pipeline integration.
-
-## Flask Web UI
-Users can:
-- Input real-time meteorological parameters into a sleek, glass-textured form.
-- Use a **Toggle Dark Mode** switch for a comfortable viewing experience.
-- Instantly view the predicted mean temperature in Celsius (°C).
-- Watch an automated **Dynamic Progress Bar** scale instantly based on the temperature output.
-- Interact with a live **Chart.js Line Graph** showcasing the temperature scaled across climate thresholds (Cold, Mild, Warm, Hot).
-- Reset parameters seamlessly with an automated form-clearing handler.
+✔ Data cleaning and preprocessing
+✔ Feature engineering using date attributes
+✔ Multiple regression model comparison
+✔ RMSE, MAE, and R² evaluation
+✔ MLflow experiment tracking
+✔ Model persistence using Joblib
+✔ Best model selection automatically
 
 ---
 
-# 🧠 Machine Learning Regression Pipeline
+## 📊 Models Tested
 
-The best predictive model was optimized and selected based on key performance regression metrics:
-- **R² Score** (Coefficient of Determination)
-- **MAE** (Mean Absolute Error)
-- **RMSE** (Root Mean Squared Error)
+* Linear Regression
+* Random Forest Regressor
+* Gradient Boosting Regressor
+* Extra Trees Regressor
+* XGBoost Regressor
 
 ---
 
-# 📂 Project Structure
+## 📈 MLflow Integration
 
+This project uses MLflow to:
+
+* Log model parameters
+* Track RMSE scores
+* Compare experiments
+* Save trained models
+* Retrieve experiment history
+
+---
+
+## 🖥 Flask Web Application
+
+The project includes a responsive weather prediction web application with:
+
+* Glassmorphism UI
+* Dark mode support
+* Animated prediction progress bar
+* Interactive Chart.js visualization
+* Responsive Bootstrap design
+
+---
+
+## 📊 Power BI Dashboard
+
+An advanced Power BI dashboard was created to visualize:
+
+* Temperature trends
+* Rainfall analysis
+* Sunshine insights
+* Seasonal patterns
+* Weather KPIs
+* Machine Learning performance metrics
+
+---
+
+## 🛠 Technologies Used
+
+### Programming & ML
+
+* Python
+* Scikit-learn
+* XGBoost
+* Pandas
+* NumPy
+* MLflow
+
+### Web Development
+
+* Flask
+* HTML5
+* CSS3
+* Bootstrap 5
+* JavaScript
+* Chart.js
+
+### Data Visualization
+
+* Power BI
+
+---
+
+## 📂 Project Structure
+
+```bash
+London_weather/
+│
+├── app.py
+├── requirements.txt
+├── london_weather.csv
+│
+├── Models/
+│   └── best_london_weather_model.pkl
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│
+└── notebooks/
+```
+
+---
+
+## 🎯 Project Goal
+
+Build an accurate weather prediction system with:
+
+✅ RMSE ≤ 3
+✅ Interactive visualization
+✅ Professional deployment-ready structure
+✅ End-to-end Machine Learning pipeline
+
+---
+
+## 👩‍💻 Author
+
+Afef Arfaoui
+
+Electronics, Automation & Web Development Engineer passionate about:
+
+* Artificial Intelligence
+* Data Science
+* Power BI
+* Machine Learning
+* Full Stack Development
